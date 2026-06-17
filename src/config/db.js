@@ -1,11 +1,11 @@
 const { Pool } = require('pg'); //se descarga la libreria npm install pg 
 
 const pool = new Pool({
-    user: 'postgres',           // El usuario por defecto de Postgres
+    user: '',                   // El usuario por defecto de Postgres
     host: 'localhost',          // Tu máquina local
-    database: 'inventario_db',  // La base de datos que se crea en pgAdmin
-    password: '1234h',          // contraseña
-    port: 5432,                 // El puerto por defecto
+    database: '',               // La base de datos que se crea en pgAdmin
+    password: '',               // contraseña
+    port: ,                     // El puerto por defecto
 });
 
 const inicializarBaseDeDatos = async () => {
